@@ -3,6 +3,7 @@ import './App.css'
 import { URL, API_KEY } from './constants';
 import RecentSearch from './components/RecentSearch';
 import QuestionAnswer from './components/QuestionAnswer';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
@@ -203,6 +204,7 @@ function App() {
           <option value="light" className="bg-white text-zinc-800">Light</option>
         </select>
       </div>
+      <Analytics />
     </div>
   );
 }
